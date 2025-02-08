@@ -1,0 +1,259 @@
+@media (max-width: 992px) {
+  .logo-wsp {
+    top: 880px;
+  }
+  .navbar-list {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    background: rgb(255, 58, 180);
+    left: 5%;
+    right: 5%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 30px;
+    align-items: center;
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    background: rgba(255, 0, 119, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+    color: var(--text-white);
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+
+  #menu-toggle:checked ~ .navbar-list {
+    transform: translateX(0);
+  }
+  header input {
+    display: flex;
+  }
+
+  .navbar-list-user {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    transform: translateX(1000px);
+    background: rgb(255, 58, 180);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    width: 100%;
+    transition: all 1s ease;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .navbar-list-user a {
+    color: var(--text-white);
+  }
+
+  .menu-user:checked ~ .navbar-list-user {
+    /* transform: translateX(300px); */
+    transform: translateX(0);
+    transition: all 1s ease;
+  }
+
+  /* HERO */
+  #hero {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-info {
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+  }
+  .hero-info h1 {
+    width: 100%;
+    font-size: 50px;
+    font-size: 60px;
+  }
+
+  .hero-bajada {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  #hero img {
+    display: none;
+  }
+
+  /* SERVICIOS */
+
+  #about h2 {
+    font-size: 30px;
+  }
+
+  .about-cards-container {
+    max-width: 900px;
+  }
+  .about-card {
+    width: 300px;
+    height: 500px;
+  }
+  .about-card img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-card b {
+    font-size: 26px;
+  }
+  .about-card p {
+    font-size: 14px;
+  }
+  /* PRECIOS */
+  #precios h2 {
+    font-size: 30px;
+  }
+  .precios-card {
+    width: 300px;
+    height: 700px;
+    gap: 5px;
+  }
+
+  .precios-card img {
+    width: 250px;
+    height: 250px;
+  }
+  .precios-card h2 {
+    font-size: 24px;
+  }
+  .precios-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .precios-num {
+    font-size: 16px;
+    height: 20px;
+  }
+  .btn-precios {
+    background: rgb(245, 18, 192);
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+    padding: 0px 5px;
+    color: var(--text-white);
+    font-size: 22px;
+  }
+
+  /* CONTACTO */
+  #contacto h2 {
+    font-size: 34px;
+  }
+  .contact-text {
+    font-size: 26px;
+  }
+
+  .contact-inputs {
+    font-size: 26px;
+  }
+  textarea {
+    width: 400px;
+  }
+  .p-ubi {
+    width: 80%;
+  }
+  iframe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    gap: 0px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  #hero p {
+    width: 90%;
+  }
+
+  .hero-bajada {
+    font-size: 24px;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+
+  #hero button {
+    font-size: 20px;
+  }
+
+  .about-card {
+    width: 350px;
+    height: 600px;
+  }
+
+  .about-card img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-card b {
+    font-size: 26px;
+  }
+
+  .about-card p {
+    font-size: 16px;
+  }
+
+  /* PRECIOS */
+
+  .precios-card {
+    height: 600px;
+  }
+  .precios-card h2 {
+    font-size: 24px;
+  }
+
+  .precios-text {
+    font-size: 16px;
+  }
+  .precios-num {
+    font-size: 19px;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 734px) {
+  #contacto {
+    width: 100%;
+  }
+}
+
+/* EXTERNOS */
+@media (max-width: 992px) {
+  .formulario {
+    width: 70%;
+  }
+}
